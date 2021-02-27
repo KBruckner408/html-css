@@ -1,0 +1,62 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  background: red;
+  height: 100vh;
+  padding: 30px;
+}
+
+.nav {
+  background-color: white;
+  height: 80px;
+}
+
+.content {
+    height: 450px;
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-left {
+    background-color: yellow;
+    height: 100%;
+    width: 500px;
+}
+
+.content-right {
+    background-color: yellow;
+    width: 800px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.card {
+    background-color: green;
+    height: 80%;
+    width: 100px;
+
+}
+
+.footer {
+    background-color: white;
+    height: 80px;
+    margin-top: 30px;
+}
