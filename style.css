@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
 html {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Dzięki temu margin i pading jest wliczny w rozmiar
+  elementu. Nie jest dodawany na zewnątrz
+  
+  */
 }
 
 body {
@@ -14,7 +19,7 @@ body {
 
 .wrapper {
   background: red;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 30px;
 }
 
@@ -34,8 +39,49 @@ body {
 
 .content-left {
     background-color: yellow;
-    height: 100%;
+    /* Przezroczystość całego elementu - łącznie z zawartością np tesketm */
+    /* opacity: .3;  */
+    /* Ostatni parametr - poziom przezroczystości % */
+    /* background-color: rgba(255, 255, 0 , 0.3); */
+    /* height: 100%; */
+    /* height: 900px; */
     width: 500px;
+    padding: 30px;
+}
+
+h1 {
+  margin: 0;
+}
+
+span {
+  /* color: white; */
+  /* color: #ffffff; */
+  /* color: #fff; */
+  /* color: rgb(255, 255, 225); */
+  color: rgba(255, 255, 255 , .8);
+  /* font-weight: bold; */
+}
+
+p {
+  font-size: 18px; /* Rozmiar tekstu */
+  color: #333; /* Kolor tekstu */
+  text-align: left; /* Wyrównanie tekstu*/
+  font-weight: 400; /* Grubość tekstu */
+  font-family: 'Roboto', sans-serif;
+  font-style: italic; /* Kursywa */
+  text-transform: uppercase; /* Caps lock*/ 
+  margin: 0;
+  line-height: 20px; /* Odetęp między liniami w tekście  */
+  letter-spacing: 5px; /* Odstęp między literami w tekście */
+  word-spacing: 10px; /* Odstęp między słowami w tekście */
+  text-indent: 20px; /* wcięcie w pierwszej linii tekstu*/
+  text-shadow: 1px 1px 3px #333; /* Text shadow*/
+}
+
+a {
+  text-decoration: none; /* Brak dekoracji tekstu */
+  text-decoration: underline; /* Podkreślenie */ 
+  display: block; /* Dzięki temu element inline staje sie elementem blokowym*/
 }
 
 .content-right {
@@ -48,6 +94,15 @@ body {
     padding: 30px;
 }
 
+.big-div {
+  background: blue;
+  width: 100%;
+  height: 600px;
+
+}
+
+
+
 .card {
     background-color: green;
     height: 80%;
@@ -55,8 +110,16 @@ body {
 
 }
 
+#left {
+  background: red;
+}
+
+
+
 .footer {
     background-color: white;
     height: 80px;
     margin-top: 30px;
 }
+
+
